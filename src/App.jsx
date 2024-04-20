@@ -30,7 +30,7 @@ const App = () => {
 					/>
 					<button
 						onClick={() => searchMovie()}
-					>SEARCH</button>
+					>Search</button>
 				</div>
 				<div className="card-container">
 					{(movies) ? movies.map((mov, index) => <Card movie={mov} key={index} />) : `No movies with ${searchItem} name. Please try with other movie name.`}
